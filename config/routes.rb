@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   #.../posts/1や.../posts/3に該当する
 
   patch 'posts/:id' => 'posts#update', as: 'update_post'
+  delete 'posts/:id' => 'posts#destroy', as: 'destroy_post'
 end
 
