@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   def new
   		# 空のモデルをビューへ渡す
   		@post = Post.new
-  	end
+  end
 
   def create
   	#ストロングパラメータを使用
@@ -31,6 +31,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-  	  params.require(:post).permit(:title, :body)
+  	  params.require(:post).permit(:title, :body, :image)
  end
 end
